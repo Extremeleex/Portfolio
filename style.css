@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Krona+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    box-sizing:border-box;
+    background-color: black;
+    color:white
+
+}
+
+h1{
+    font-weight: bold;
+}
+
+strong {
+    color: blue;
+}
+
+.texto {
+    display: flex;
+    text-align: center;
+  align-items: center;
+  justify-content: space-between;
+}
+  
+.texto__principal {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 50px 0 50px;
+        gap: 82px
+}
+
+.texto__principal__título {
+    font-family: 'Krona One', sans-serif;
+}
+
+.texto__secundario {
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.5rem;
+}
+
+.apresentação__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  justify-content: space-between;
+  margin: 3%
+}
+
+.apresentação__links__subtitulo {
+    font-family: 'Krona One', sans-serif;
+}
+
+.apresentação__links__link {
+    color: blue;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    border: 1px solid blue;
+    padding: 21.5px 0;
+    margin: 3%;
+    width: 50%;
+}
+
+.apresentação__links__link:hover {
+ font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+.rodape{
+    padding: 20px; 
+    margin: 10% 0 0 0;
+    color: black;
+    background-color: blue;
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    width: 100%;
+}
+
+.cabecalho{
+    align-items: center ;
+}
+
+.cabecalho__menu__link{
+    margin: 30px;
+    color:blue
+}
+
+.cabecalho__menu{
+    display: flex;
+    font-size: 1.5rem;
+    color:blue;
+    gap: 70px
+
+}
+
+.cabecalho__menu__link:hover {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+   }
+
+@media (max-width: 800px) {
+
+    .cabecalho{
+        padding: 10%;
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+    .texto{
+      flex-direction: column-reverse;
+      padding: 5%;  
+    }
+
+    .texto__principal{
+        width:auto;
+    }
+}
